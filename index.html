@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal-Crypto (Permainan)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jurnal-Crypto</h1>
+        <button id="theme-toggle">Ganti Tema</button>
+    </header>
+
+    <main>
+        <section id="balance-section">
+            <h2>Saldo Anda: <span id="user-balance">0.00</span> USDT</h2>
+        </section>
+
+        <section id="deposit-section">
+            <h2>Deposit</h2>
+            <p>Untuk permainan ini, Anda bisa "deposit" USDT ke alamat fiktif:</p>
+            <p class="deposit-address">
+                **Polygon USDT (Fiktif):** `UQC8yBpZY5KwBftoV5SaXc43HSgyXki85iF9qNzNgF6uVNpd`
+            </p>
+            <p>Anggap saja setiap kali Anda melihat alamat ini, saldo Anda bertambah 1 USDT (ini hanya simulasi).</p>
+            <button id="simulate-deposit">Simulasikan Deposit (+1 USDT)</button>
+        </section>
+
+        <section id="miner-section">
+            <h2>Miner Gratis (Simulasi)</h2>
+            <p>Dapatkan **0.01 USDT** setiap 24 jam. Ini akan ditambahkan ke saldo Anda secara otomatis saat Anda mengklik.</p>
+            <button id="claim-free-miner">Ambil Miner Gratis</button>
+            <p id="miner-message"></p>
+        </section>
+
+        <section id="withdrawal-section">
+            <h2>Penarikan (Simulasi)</h2>
+            <p>Fitur penarikan hanya simulasi untuk tujuan permainan. Masukkan jumlah dan alamat dompet fiktif Anda.</p>
+            <input type="number" id="withdrawal-amount" placeholder="Jumlah USDT" min="0.01" step="0.01">
+            <input type="text" id="withdrawal-address" placeholder="Alamat Dompet Fiktif">
+            <button id="simulate-withdrawal">Simulasikan Penarikan</button>
+            <p id="withdrawal-message"></p>
+        </section>
+
+        <section id="admin-panel">
+            <h2>Panel Admin (Anda)</h2>
+            <p>Sebagai Admin, Anda bisa mengatur saldo pengguna (simulasi).</p>
+            <input type="text" id="admin-user-id" placeholder="Nama Pengguna (Fiktif)">
+            <input type="number" id="admin-set-balance" placeholder="Set Saldo (USDT)">
+            <button id="admin-set-balance-btn">Set Saldo</button>
+            <p id="admin-message"></p>
+        </section>
+
+        <section id="mining-options">
+            <h2>Pilihan Miner (Simulasi)</h2>
+            <p>Pilih koin yang ingin Anda "tambang" (ini hanya tampilan, tidak ada penambangan nyata).</p>
+            <ul>
+                <li>Dogecoin</li>
+                <li>TRON (TRX)</li>
+                <li>Bitcoin</li>
+                <li>PEPE</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jurnal-Crypto (Permainan)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
