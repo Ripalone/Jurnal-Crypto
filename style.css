@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6; /* Tema Terang */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+}
+
+body.dark-theme {
+    background-color: #2c3e50; /* Tema Gelap */
+    color: #ecf0f1;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme main {
+    background-color: #34495e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+body.dark-theme section {
+    border-bottom: 1px solid #4a6279;
+}
+
+section h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+body.dark-theme section h2 {
+    color: #85c1e9;
+    border-color: #85c1e9;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+button#theme-toggle {
+    background-color: #f39c12;
+}
+
+button#theme-toggle:hover {
+    background-color: #e67e22;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.dark-theme input[type="number"],
+body.dark-theme input[type="text"] {
+    background-color: #4a6279;
+    border-color: #6c829b;
+    color: #ecf0f1;
+}
+
+.deposit-address {
+    background-color: #ecf0f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: inline-block; /* Agar bisa seleksi teks dengan mudah */
+}
+
+body.dark-theme .deposit-address {
+    background-color: #4a6279;
+    color: #ecf0f1;
+}
+
+#miner-message, #withdrawal-message, #admin-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e6ff;
+    color: #4c5a9d;
+    border: 1px solid #c8d3f7;
+}
+
+body.dark-theme #miner-message, body.dark-theme #withdrawal-message, body.dark-theme #admin-message {
+    background-color: #4c5a9d;
+    color: #e0e6ff;
+    border-color: #6c829b;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #777;
+}
+
+body.dark-theme footer {
+    border-top: 1px solid #4a6279;
+    color: #bbb;
+}
